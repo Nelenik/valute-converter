@@ -1,0 +1,59 @@
+// @import 'variables';
+// @import 'mixins';
+
+/* Webkit (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Mozilla Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+/* Microsoft Edge */
+input[type="number"]::-ms-reveal {
+  display: none;
+}
+
+/* Универсальное правило для остальных браузеров */
+input[type="number"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// container первая переменная max-width, вторая - padding
+.container {
+  @include container(984px, 22px);
+
+  @include sol1024 {
+    max-width: 864px;
+  }
+}
+
+.title {
+  @include resetMg;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 95.454545%; /* 21px/22 */
+  text-transform: uppercase;
+  @include sol1024 {
+    font-size: 1.875rem;
+    line-height: 133.333333%; /* 40px/30 */
+  }
+  @include sol576 {
+    font-size: 1.375rem;
+    line-height: 136.363636%; /* 30px/22 */
+  }
+}

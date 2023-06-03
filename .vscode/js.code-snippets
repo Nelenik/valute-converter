@@ -1,0 +1,134 @@
+{
+	// Place your gulp-bunler-copy workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"console.log": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"declarative function": {
+		"scope": "javascript,typescript",
+		"prefix": "d-func",
+		"body": [
+			"function $1($2) {",
+			"\t$3",
+			"};",
+			"$4"
+		],
+		"description": "declarative function"
+	},
+	"function expression": {
+		"scope": "javascript,typescript",
+		"prefix": "e-func",
+		"body": [
+			"const $1 = function($2) {",
+			"\t$3",
+			"};",
+			"$4"
+		],
+		"description": "function expression"
+	},
+	"arrow function": {
+		"scope": "javascript,typescript",
+		"prefix": "a-func",
+		"body": [
+			"($1) => {",
+			"\t$2",
+			"};",
+			"$3"
+		],
+		"description": "function expression"
+	},
+	"switch": {
+		"scope": "javascript,typescript",
+		"prefix": "c-switch",
+		"body": [
+			"switch($1) {",
+			"case $2:",
+			"\t$3",
+			"\tbreak",
+			"case $4:",
+			"\t$5",
+			"\tbreak",
+			"default:",
+			"\t$6",
+			"\tbreak",
+			"}"
+		],
+		"description": "switch-case construction"
+	},
+	"add listener": {
+		"scope": "javascript,typescript",
+		"prefix": "listener",
+		"body": [
+			"$1.addEventListener('$2', function(e) {",
+			"\t$3",
+			"});",
+			"$4"
+		],
+		"description": "addEventListener"
+	},
+	"querySelector": {
+		"scope": "javascript,typescript",
+		"prefix": "selector",
+		"body": [
+			"$1.querySelector('.$2')",
+			"$3",
+		],
+		"description": "querySelector"
+	},
+	"querySelectorAll": {
+		"scope": "javascript,typescript",
+		"prefix": "selectorAll",
+		"body": [
+			"$1.querySelectorAll('.$2')",
+			"$3",
+		],
+		"description": "querySelectorAll"
+	},
+	"add class": {
+		"scope": "javascript,typescript",
+		"prefix": "class-add",
+		"body": [
+			"$1.classList.add('$2')",
+			"$3",
+		],
+		"description": "add class"
+	},
+	"remove class": {
+		"scope": "javascript,typescript",
+		"prefix": "class-remove",
+		"body": [
+			"$1.classList.remove('$2')",
+			"$3",
+		],
+		"description": "remove class"
+	},
+	"toggle class": {
+		"scope": "javascript,typescript",
+		"prefix": "class-toggle",
+		"body": [
+			"$1.classList.toggle('$2')",
+			"$3",
+		],
+		"description": "toggle class"
+	},
+	"contains class": {
+		"scope": "javascript,typescript",
+		"prefix": "class-contains",
+		"body": [
+			"$1.classList.contains('$2')",
+			"$3",
+		],
+		"description": "contains class"
+	}
+}

@@ -1,0 +1,145 @@
+{
+  "svguse": {
+    "scope": "html",
+    "prefix": "html-use",
+    "body": [
+      "<svg class=\"$1\">",
+      "\t<use xlink:href=\"sprite.svg#$2\"></use>",
+      "</svg>"
+    ],
+    "description": "Snippet for use svg sprites",
+  },
+  "burger": {
+    "scope": "html",
+    "prefix": "html-burger",
+    "body": [
+      "<button class=\"burger\" aria-label=\"Открыть меню\">",
+      "\t<span class=\"burger__line\"></span>",
+      "</button>"
+    ],
+    "description": "Snippet for burger",
+  },
+  "baseswiper": {
+    "scope": "html",
+    "prefix": "html-swiper",
+    "body": [
+      "<div class=\"swiper\">",
+      "\t<ul class=\"list-reset swiper-wrapper\">",
+      "\t\t<li class=\"swiper-slide\"></li>",
+      "\t\t<li class=\"swiper-slide\"></li>",
+      "\t\t<li class=\"swiper-slide\"></li>",
+      "\t</ul>",
+      "\t<div class=\"swiper-pagination\"></div>",
+      "\t<div class=\"swiper-button-prev\"></div>",
+      "\t<div class=\"swiper-button-next\"></div>",
+      "\t<div class=\"swiper-scrollbar\"></div>",
+      "</div>",
+    ],
+    "description": "Snippet for swiper",
+  },
+  "picture": {
+    "scope": "html",
+    "prefix": "html-picture",
+    "body": [
+      "<picture>",
+      "\t<source srcset=\"$1\" type=\"image/webp\" media=\"()\">",
+      "\t<source srcset=\"$1\" type=\"image/webp\"> ",
+      "\t<img class=\"\" src=\"$1\" alt=\"$2\" loading=\"lazy\">",
+      "</picture>",
+    ]
+  },
+  "unorderedList": {
+    "scope": "html",
+    "prefix": "html-ul",
+    "body": [
+      "<ul class=\"list-reset $1__list\">",
+      "\t<li class=\"$2__item\"></li>",
+      "\t<li class=\"$2__item\"></li>",
+      "\t<li class=\"$2__item\"></li>",
+      "</ul>"
+    ],
+    "description": "Snippet for unordered list"
+  },
+  "menuList": {
+    "scope": "html",
+    "prefix": "html-menu",
+    "body": [
+      "<ul class=\"list-reset $1__list\">",
+      "\t<li class=\"$2__item\">",
+      "\t\t<a class=\"$3__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "\t<li class=\"$2__item\">",
+      "\t\t<a class=\"$3__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "\t<li class=\"$2__item\">",
+      "\t\t<a class=\"$3__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "\t<li class=\"$2__item\">",
+      "\t\t<a class=\"$3__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "\t<li class=\"$2__item\">",
+      "\t\t<a class=\"$3__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "</ul>"
+    ],
+    "description": "Snippet for menu list"
+  },
+  "select": {
+    "scope": "html",
+    "prefix": "html-select",
+    "body": [
+      "<label class=\"\">",
+      "\t<span class=\"\">$1</span>",
+      "\t<select name=\"$2\">",
+      "\t\t<option value=\"$3\">$3</option>",
+      "\t\t<option value=\"$4\">$4</option>",
+      "\t\t<option value=\"$5\">$5</option>",
+      "\t\t<option value=\"$6\">$6</option>",
+      "\t\t<option value=\"$7\">$7</option>",
+      "\t</select>",
+      "</label>",
+    ],
+    "description": "Snippet for select"
+  },
+  "custom checkbox": {
+    "scope": "html",
+    "prefix": "html-check",
+    "body": [
+      "<label class=\"check\">",
+      "\t<input class=\"check__default\" type=\"checkbox\" name=\"\">",
+      "\t<span class=\"check__custom\"></span>",
+      "\t<span class=\"check__text\">$1</span>",
+      "</label>"
+    ],
+    "description": "Snippet for custom checkbox",
+  },
+  "socials list": {
+    "scope": "html",
+    "prefix": "html-socials",
+    "body": [
+      "<ul class=\"list-reset socials\">",
+      "\t<li class=\"$1__item\">",
+      "\t\t<a class=\"$2__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "\t<li class=\"$1__item\">",
+      "\t\t<a class=\"$2__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "\t<li class=\"$1__item\">",
+      "\t\t<a class=\"$2__link\" href=\"#!\"></a>",
+      "\t</li>",
+      "</ul>"
+    ],
+    "description": "Snippet for socials list"
+  },
+  "modal base layout": {
+    "scope": "html",
+    "prefix": "html-modal",
+    "body": [
+      "<div class=\"modal-overlay\" data-modal=\"$1\">",
+      "\t<div class=\"modal-content-wrapper\">",
+      "\t\t<button class=\"btn-reset modal-close\" type=\"button\">close</button>",
+      "\t</div>",
+      "</div>"
+    ]
+  }
+}

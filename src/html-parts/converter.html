@@ -1,0 +1,31 @@
+<section class="converter">
+  <div class="container converter__container">
+    <h1 class="converter__title title">
+      Конвертер валют
+    </h1>
+    <div class="converter__fields">
+      <div class="converter__left">
+        <h2 class="converter__subtitle">
+          У меня имеется
+        </h2>
+        <div class="converter__select-wrap" id="fromSelect"></div>
+        <input class="converter__field" type="number" id="fromAmount" value="1">
+      </div>
+      <button type="button" class="btn-reset converter__btn">
+        <svg class="converter__icon-desk">
+          <use xlink:href="sprite.svg#arrows"></use>
+        </svg>
+        <svg class="converter__icon-mob">
+          <use xlink:href="sprite.svg#arrows-round"></use>
+        </svg>
+      </button>
+      <div class="converter__right">
+        <h2 class="converter__subtitle">
+          Хочу приобрести
+        </h2>
+        <div class="converter__select-wrap" id="toSelect"></div>
+        <input class="converter__field" type="number" id="toAmount" readonly value="0.0000">
+      </div>
+    </div>
+  </div>
+</section>
