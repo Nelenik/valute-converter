@@ -64,16 +64,13 @@ export function manageConverter(data) {
 			},
 		});
 	};
+	convert();
 
 	fromSelect.onChange = () => convert();
 	toSelect.onChange = () => convert();
 
 	fromField.addEventListener('input', () => {
 		wait(300).then(() => convert());
-	});
-
-	window.addEventListener('load', () => {
-		convert();
 	});
 
 	btn.addEventListener('click', () => {
